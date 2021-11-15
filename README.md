@@ -1261,12 +1261,6 @@ const props = useTexture({
 return <meshStandardMaterial {...props} />
 ```
 
-By default, each texture will be preemptively uploaded to the GPU using `gl.initTexture`. You can opt-out of this behaviour:
-
-```jsx
-const texture = useTexture(url, { init: false })
-```
-
 #### useCubeTexture
 
 [![](https://img.shields.io/badge/-storybook-%23ff69b4)](https://drei.pmnd.rs/?path=/story/loaders-cubetexture)
